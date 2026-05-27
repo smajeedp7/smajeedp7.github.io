@@ -6,7 +6,7 @@
   <title>Shariq Majeed &#8212; Fullstack Developer</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- 
+
     :root {
       --navy:      #0f172a;
       --navy-2:    #1e293b;
@@ -23,17 +23,17 @@
       --tag-text:  #93c5fd;
       --radius:    12px;
     }
- 
+
     html { scroll-behavior: smooth; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--navy); color: var(--text); line-height: 1.65; font-size: 16px; }
     a { color: var(--accent-2); text-decoration: none; }
     a:hover { text-decoration: underline; }
     strong { display: inline; }
- 
+
     .container { max-width: 920px; margin: 0 auto; padding: 0 24px; }
     section { padding: 80px 0; }
     section:nth-child(even) { background: var(--navy-2); }
- 
+
     /* Nav */
     nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(15,23,42,0.88); backdrop-filter: blur(12px); border-bottom: 1px solid var(--navy-3); }
     nav .inner { max-width: 920px; margin: 0 auto; padding: 0 24px; height: 60px; display: flex; align-items: center; justify-content: space-between; }
@@ -41,7 +41,7 @@
     .nav-links { display: flex; gap: 28px; }
     .nav-links a { color: var(--text-muted); font-size: 14px; font-weight: 500; transition: color .2s; }
     .nav-links a:hover { color: var(--text); text-decoration: none; }
- 
+
     /* Hero */
     #hero { min-height: 100vh; display: flex; align-items: center; padding-top: 60px; background: radial-gradient(ellipse at 70% 50%, rgba(59,130,246,0.08) 0%, transparent 65%), var(--navy); }
     .hero-content { max-width: 700px; }
@@ -61,12 +61,12 @@
     .hero-meta { margin-top: 56px; display: flex; gap: 40px; flex-wrap: wrap; }
     .hero-stat .num { font-size: 28px; font-weight: 800; color: var(--accent-2); }
     .hero-stat .lbl { font-size: 13px; color: var(--text-dim); margin-top: 2px; }
- 
+
     /* Section titles */
     .section-label { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; color: var(--accent); text-transform: uppercase; margin-bottom: 10px; }
     .section-title { font-size: clamp(26px, 4vw, 36px); font-weight: 800; letter-spacing: -0.02em; color: #f1f5f9; margin-bottom: 12px; }
     .section-divider { width: 40px; height: 3px; background: var(--accent); border-radius: 2px; margin-bottom: 48px; }
- 
+
     /* About */
     .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
     .about-text p { color: var(--text-muted); margin-bottom: 16px; line-height: 1.75; }
@@ -76,14 +76,14 @@
     .about-card .icon { width: 36px; height: 36px; border-radius: 8px; background: var(--tag-bg); display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
     .about-card h4 { font-size: 14px; font-weight: 700; color: #f1f5f9; margin-bottom: 4px; }
     .about-card p { font-size: 13px; color: var(--text-dim); line-height: 1.5; }
- 
+
     /* Skills */
     .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
     .skill-card { background: var(--card); border: 1px solid var(--card-b); border-radius: var(--radius); padding: 22px; }
     .skill-card h4 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-2); margin-bottom: 14px; }
     .tag-list { display: flex; flex-wrap: wrap; gap: 8px; }
     .tag { background: var(--tag-bg); color: var(--tag-text); padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 500; }
- 
+
     /* Projects */
     .projects-grid { display: grid; gap: 24px; }
     .project-card { background: var(--card); border: 1px solid var(--card-b); border-radius: var(--radius); padding: 32px; transition: border-color .2s, transform .2s; position: relative; overflow: hidden; }
@@ -100,7 +100,7 @@
     .project-highlights li::before { content: '\25B8'; color: var(--accent); position: absolute; left: 0; top: 1px; }
     .project-highlights li strong { color: var(--text); }
     .project-tags { display: flex; flex-wrap: wrap; gap: 8px; }
- 
+
     /* Experience */
     .timeline { position: relative; }
     .timeline::before { content: ''; position: absolute; left: 15px; top: 8px; bottom: 8px; width: 1px; background: var(--navy-3); }
@@ -114,7 +114,7 @@
     .timeline-bullets li { position: relative; padding-left: 18px; font-size: 14px; color: var(--text-muted); line-height: 1.6; }
     .timeline-bullets li::before { content: '\25B8'; color: var(--accent); position: absolute; left: 0; top: 1px; }
     .timeline-bullets li strong { color: var(--text); }
- 
+
     /* Education */
     .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
     .edu-card { background: var(--card); border: 1px solid var(--card-b); border-radius: var(--radius); padding: 26px; }
@@ -123,16 +123,16 @@
     .edu-meta { font-size: 13px; color: var(--text-dim); margin-bottom: 12px; }
     .edu-detail { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
     .edu-gpa { display: inline-block; margin-top: 10px; background: var(--tag-bg); color: var(--tag-text); padding: 3px 10px; border-radius: 6px; font-size: 12px; font-weight: 600; }
- 
+
     /* Contact */
     #contact { text-align: center; }
     .contact-card { background: var(--card); border: 1px solid var(--card-b); border-radius: 16px; padding: 56px 40px; max-width: 600px; margin: 0 auto; }
     .contact-card h2 { font-size: 32px; font-weight: 800; margin-bottom: 12px; }
     .contact-card p { color: var(--text-muted); margin-bottom: 36px; }
     .contact-links { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
- 
+
     footer { background: var(--navy); border-top: 1px solid var(--navy-3); padding: 24px; text-align: center; font-size: 13px; color: var(--text-dim); }
- 
+
     @media (max-width: 700px) {
       .about-grid, .edu-grid { grid-template-columns: 1fr; }
       .nav-links { display: none; }
@@ -143,7 +143,7 @@
   </style>
 </head>
 <body>
- 
+
 <nav>
   <div class="inner">
     <span class="nav-brand">SM</span>
@@ -157,7 +157,7 @@
     </div>
   </div>
 </nav>
- 
+
 <!-- Hero -->
 <section id="hero">
   <div class="container">
@@ -185,7 +185,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- About -->
 <section id="about">
   <div class="container">
@@ -232,7 +232,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- Skills -->
 <section id="skills">
   <div class="container">
@@ -282,7 +282,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- Projects -->
 <section id="projects">
   <div class="container">
@@ -290,297 +290,10 @@
     <h2 class="section-title">Things I've built &amp; researched</h2>
     <div class="section-divider"></div>
     <div class="projects-grid">
- 
+
       <!-- Rising Star -->
       <div class="project-card">
         <div class="project-header">
           <div class="project-title">Rising Star CE &amp; International</div>
           <span class="project-badge">Lead Developer</span>
         </div>
-        <div class="project-sub">PublicSeven GmbH &nbsp;&#183;&nbsp; 2022 &#8211; 2026</div>
-        <p class="project-desc">
-          A partner bonus and voucher platform for Fujitsu's EU channel partners. Based on quarterly
-          purchasing volumes, partners earn bonuses which they can convert into vouchers and redeem
-          across multiple Fujitsu tools and platforms.
-        </p>
-        <ul class="project-highlights">
-          <li>Generated <strong>2,898 vouchers worth &#8364;1.7M</strong> by building Rising Star CE (.NET 4.8) for Fujitsu's DACH region &#8212; its success directly led to the international rollout</li>
-          <li>Scaled the platform to <strong>40+ countries, 5 languages, and 24 active markets</strong> by rebuilding from a webform architecture to <strong>.NET 6 MVC</strong></li>
-          <li>Together both platforms handled <strong>&#8364;2M+ in partner bonus transactions</strong> across 3,865 vouchers</li>
-          <li>Integrated with multiple Fujitsu tools including SDC and SPR where partners can apply vouchers to orders</li>
-        </ul>
-        <div class="project-tags">
-          <span class="tag">.NET 4.8 / .NET 6 MVC</span><span class="tag">C#</span>
-          <span class="tag">MS SQL Server</span><span class="tag">Multi-language</span>
-          <span class="tag">40+ Countries</span>
-        </div>
-      </div>
- 
-      <!-- NeuKundenBonus -->
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-title">NeuKundenBonus (NCB) Portal</div>
-          <span class="project-badge">Lead Developer</span>
-        </div>
-        <div class="project-sub">PublicSeven GmbH &nbsp;&#183;&nbsp; Jul 2024 &#8211; Present</div>
-        <p class="project-desc">
-          A financial workflow platform for Fujitsu's EU channel partners to claim new customer bonuses.
-          Partners submit claims for qualifying new customers, which flow through a multi-role approval
-          process from verification to credit note creation &#8212; with payouts up to &#8364;150,000 per transaction.
-        </p>
-        <ul class="project-highlights">
-          <li>Rebuilt the legacy .NET Framework 4.7 portal from scratch in <strong>.NET 8</strong> with a modern microservice architecture &#8212; Repository pattern, Unit of Work, DI, global exception handling</li>
-          <li>Automated the full claim lifecycle: Salesforce customer eligibility check &#8594; data warehouse verification &#8594; 4-role approval workflow (Partner &#8594; Sales &#8594; Controller &#8594; Finance) &#8594; credit note creation</li>
-          <li>Integrated with <strong>Salesforce, SAP, and a data warehouse</strong> for automated new customer verification</li>
-          <li>Since launch in July 2024: <strong>900+ requests processed across 25+ countries</strong>, handling claims up to <strong>&#8364;150,000 per transaction</strong></li>
-        </ul>
-        <div class="project-tags">
-          <span class="tag">.NET 8</span><span class="tag">Microservices</span>
-          <span class="tag">Salesforce</span><span class="tag">SAP</span>
-          <span class="tag">25+ Countries</span>
-        </div>
-      </div>
- 
-      <!-- K&#332; SHIN -->
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-title">K&#332; SHIN &#8212; Service Renewal Platform</div>
-          <span class="project-badge">Primary Developer</span>
-        </div>
-        <div class="project-sub">Fsas Technologies (formerly Fujitsu) &nbsp;&#183;&nbsp; DACH Region</div>
-        <p class="project-desc">
-          A multi-tenant service renewal portal for Fsas Technologies' DACH channel partners &#8212; allowing
-          resellers, distributors, and sales employees to manage their customers' hardware service
-          contracts, track renewals, and identify new business opportunities.
-        </p>
-        <ul class="project-highlights">
-          <li>Stepped in as sole developer &#8212; inherited a system with critical reseller-to-asset mapping errors, slow queries, and UX issues across Germany, Austria, and Switzerland</li>
-          <li>Aggregates <strong>~2 million rows from 8&#8211;10 data sources</strong> (Oracle, Informix, Salesforce, SAP, data warehouse) into SQL Server via custom ETL console apps</li>
-          <li>Fixed critical reseller-to-asset mapping bugs and optimised queries &#8212; cutting the worst page load <strong>from 15 seconds to under 8 seconds</strong></li>
-          <li>Each channel partner has their own isolated customer view &#8212; fully multi-tenant</li>
-        </ul>
-        <div class="project-tags">
-          <span class="tag">ASP.NET Core</span><span class="tag">MS SQL Server</span>
-          <span class="tag">Oracle</span><span class="tag">Salesforce</span>
-          <span class="tag">ETL</span><span class="tag">DACH</span>
-        </div>
-      </div>
- 
-      <!-- Nintei -->
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-title">Nintei &#8212; Certification Management Portal</div>
-          <span class="project-badge">Lead Developer</span>
-        </div>
-        <div class="project-sub">PublicSeven GmbH &nbsp;&#183;&nbsp; Pan-European</div>
-        <p class="project-desc">
-          A pan-European certification portal for Fujitsu's channel partners, allowing them to view
-          their certification status and understand their partner tier level (Essential, Advanced,
-          Strategic). A domain so complex that only 2 people in the entire organisation fully understood
-          the certification logic &#8212; one of them being me.
-        </p>
-        <ul class="project-highlights">
-          <li>Tracked <strong>74,000+ certificates</strong> (24K+ contact-level, 50K+ company-level) synced from Salesforce within 24 hours &#8212; any change in Salesforce reflected automatically</li>
-          <li>Built a country-specific rules engine to validate partner tier status &#8212; rules differed per country and operated at both company and individual user level</li>
-          <li>Calculated training plans for partner groups with different certification tracks per country</li>
-          <li>Built on <strong>.NET 6 MVC</strong> with a console app handling Salesforce data sync and calculation &#8212; later fully integrated into Paneru as a core module</li>
-        </ul>
-        <div class="project-tags">
-          <span class="tag">.NET 6 MVC</span><span class="tag">Salesforce</span>
-          <span class="tag">Rules Engine</span><span class="tag">74K+ Certificates</span>
-          <span class="tag">Pan-European</span>
-        </div>
-      </div>
- 
-      <!-- Paneru -->
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-title">Paneru &#8212; Partner Cockpit International</div>
-          <span class="project-badge">50% Contributor</span>
-        </div>
-        <div class="project-sub">PublicSeven GmbH &nbsp;&#183;&nbsp; All of Europe incl. Balkans</div>
-        <p class="project-desc">
-          A central partner dashboard giving Fujitsu's EU channel partners a single view of all
-          their relevant tools, programmes, and activities &#8212; including bonus agreements, certifications,
-          pricing tools, and deal registrations. Active across all European countries including the Balkans.
-        </p>
-        <ul class="project-highlights">
-          <li>Contributed ~50% of the platform &#8212; built graphs, reports, and user management with role-based data views based on user type and account type</li>
-          <li>Aggregated live data from multiple applications into a single dashboard &#8212; serving <strong>500&#8211;1,000+ users</strong> via Windows SSO</li>
-          <li>Later absorbed Nintei (certification management) as a fully integrated module</li>
-        </ul>
-        <div class="project-tags">
-          <span class="tag">ASP.NET Core</span><span class="tag">React</span>
-          <span class="tag">MS SQL Server</span><span class="tag">SSO</span>
-          <span class="tag">500&#8211;1,000+ Users</span>
-        </div>
-      </div>
- 
-      <!-- Zenkei -->
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-title">Zenkei &#8212; Internal Dev Knowledge Hub</div>
-          <span class="project-badge">Contributor</span>
-        </div>
-        <div class="project-sub">PublicSeven GmbH &nbsp;&#183;&nbsp; Internal Tool</div>
-        <p class="project-desc">
-          An internal React + .NET application built to centralise knowledge across all PublicSeven
-          projects &#8212; tracking hosting environments, database and table usage, console app schedules,
-          and last-run timestamps, with Confluence integration. Eliminated the need for developers
-          to hunt across systems when covering for teammates.
-        </p>
-        <div class="project-tags">
-          <span class="tag">React</span><span class="tag">.NET</span>
-          <span class="tag">Confluence</span><span class="tag">Internal Tools</span>
-        </div>
-      </div>
- 
-      <!-- vCard -->
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-title">vCard by PublicSeven</div>
-          <span class="project-badge">Contributor</span>
-        </div>
-        <div class="project-sub"><a href="https://vcard.publicseven.com" target="_blank" style="color:var(--accent)">vcard.publicseven.com</a> &nbsp;&#183;&nbsp; PublicSeven GmbH</div>
-        <p class="project-desc">
-          A React-based digital business card platform allowing users to create personalised profiles
-          with custom URLs, QR codes, and .vcf download. Features NFC-enabled physical cards that
-          display the contact profile on tap, dynamic profile updates, and subscription management &#8212;
-          built as a public-facing product with SEO-optimised landing pages.
-        </p>
-        <div class="project-tags">
-          <span class="tag">React</span><span class="tag">NFC</span>
-          <span class="tag">Custom URLs</span><span class="tag">Subscriptions</span>
-          <span class="tag">SEO</span>
-        </div>
-      </div>
- 
-      <!-- Thesis -->
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-title">Strengths &amp; Weaknesses of Classical Occlusion Culling Algorithms</div>
-          <span class="project-badge">Research</span>
-        </div>
-        <div class="project-sub">M.Sc. Thesis &nbsp;&#183;&nbsp; Universit&#228;t Paderborn &nbsp;&#183;&nbsp; 2024</div>
-        <p class="project-desc">
-          An empirical study comparing five classical occlusion culling algorithms for real-time 3D
-          rendering &#8212; a technique used in games and simulations to skip rendering geometry hidden
-          behind other objects. The study revealed a surprising finding about how these decades-old
-          algorithms perform on modern GPU hardware.
-        </p>
-        <ul class="project-highlights">
-          <li>Implemented three algorithms (PLP, CPLP, SOOQ) from scratch in <strong>C++</strong> within the PADrend rendering engine; CHC and CHC++ benchmarked from existing implementations</li>
-          <li>Tested all five algorithms across <strong>5,000 rendered frames</strong> using complex 3D scenes (Power Plant, Pompeii, AutoFabrik), recording frame duration, triangle count, and occlusion query metrics per frame</li>
-          <li>Key finding: frame duration correlated directly with <strong>scene complexity</strong>, not with the number of occlusion queries &#8212; contradicting the core assumption behind most of these algorithms</li>
-          <li>Conclusion: on modern GPUs, the overhead these 20-year-old algorithms were designed to minimise is no longer the bottleneck &#8212; making their strategies largely equivalent in practice</li>
-        </ul>
-        <div class="project-tags">
-          <span class="tag">C++</span><span class="tag">EScript</span>
-          <span class="tag">PADrend</span><span class="tag">Computer Graphics</span>
-          <span class="tag">GPU Rendering</span><span class="tag">Algorithm Analysis</span>
-        </div>
-      </div>
- 
-    </div>
-  </div>
-</section>
- 
-<!-- Experience -->
-<section id="experience">
-  <div class="container">
-    <div class="section-label">Experience</div>
-    <h2 class="section-title">Where I've worked</h2>
-    <div class="section-divider"></div>
-    <div class="timeline">
- 
-      <div class="timeline-item">
-        <div class="timeline-dot">&#128188;</div>
-        <div class="timeline-period">Jan 2023 &#8211; Present</div>
-        <div class="timeline-company">PublicSeven GmbH &nbsp;&#183;&nbsp; Paderborn, Germany</div>
-        <div class="timeline-role">.NET Developer (Full-Time)</div>
-        <ul class="timeline-bullets">
-          <li>Led delivery of <strong>10+ enterprise B2B applications</strong> for Fujitsu and ASUS in a lean 7&#8211;10 person team &#8212; owning architecture decisions, implementation, deployments, and production support</li>
-          <li>Scaled a partner bonus platform <strong>(Rising Star)</strong> to <strong>40+ countries and &#8364;2M+ in transactions</strong> by rebuilding from a webform architecture to .NET 6 MVC across 24 active markets in 5 languages</li>
-          <li>Modernised a new customer bonus portal <strong>(NeuKundenBonus)</strong> from .NET 4.7 to <strong>.NET 8</strong> &#8212; designing database schemas, service boundaries, and integrations with Salesforce, SAP, and a data warehouse</li>
-          <li>Automated a 4-role approval workflow processing <strong>900+ requests across 25+ countries</strong>, handling up to <strong>&#8364;150,000 per claim</strong></li>
-          <li>Stabilised a multi-tenant DACH service renewal platform <strong>(K&#332; SHIN)</strong> as sole developer &#8212; cutting load time <strong>from 15s to under 8s</strong> across ~2M rows from 8&#8211;10 sources</li>
-          <li>Cut a critical <strong>MS SQL Server</strong> query from several minutes to <strong>under 10 seconds</strong> using multi-CTE stored procedures with LAG window functions</li>
-          <li>Delivered <strong>Azure Service Bus</strong> async workflows, Docker-based CI/CD, and <strong>Application Insights</strong> monitoring across multiple projects</li>
-        </ul>
-      </div>
- 
-      <div class="timeline-item">
-        <div class="timeline-dot">&#127891;</div>
-        <div class="timeline-period">Nov 2021 &#8211; Dec 2022</div>
-        <div class="timeline-company">PublicSeven GmbH &nbsp;&#183;&nbsp; Paderborn, Germany</div>
-        <div class="timeline-role">.NET Developer (Working Student)</div>
-        <ul class="timeline-bullets">
-          <li>Generated <strong>2,898 vouchers worth &#8364;1.7M</strong> in partner incentives by building Rising Star CE (.NET 4.8) for Fujitsu's DACH region &#8212; its success directly led to the international rollout across 40+ countries</li>
-          <li>Designed PublicSeven's first <strong>ASP.NET Core / .NET 6</strong> application &#8212; which became the reference implementation adopted for all subsequent projects and migrations</li>
-          <li>Delivered Fabrikate Gruppenportal &#8212; an internal .NET discount management tool with a console app that auto-detected new product groups and triggered email alerts when discounts were missing</li>
-        </ul>
-      </div>
- 
-      <div class="timeline-item">
-        <div class="timeline-dot">&#128241;</div>
-        <div class="timeline-period">Apr 2019 &#8211; Sep 2019</div>
-        <div class="timeline-company">M3 Technologies &nbsp;&#183;&nbsp; Karachi, Pakistan</div>
-        <div class="timeline-role">Android Developer</div>
-        <ul class="timeline-bullets">
-          <li>Developed enterprise Android applications in Java and Kotlin with REST API integrations</li>
-        </ul>
-      </div>
- 
-    </div>
-  </div>
-</section>
- 
-<!-- Education -->
-<section id="education">
-  <div class="container">
-    <div class="section-label">Education</div>
-    <h2 class="section-title">Academic background</h2>
-    <div class="section-divider"></div>
-    <div class="edu-grid">
-      <div class="edu-card">
-        <div class="edu-degree">M.Sc. Computer Science</div>
-        <div class="edu-school">Universit&#228;t Paderborn</div>
-        <div class="edu-meta">Paderborn, Germany &nbsp;&#183;&nbsp; Apr 2020 &#8211; Jan 2024</div>
-        <div class="edu-detail">
-          <strong style="color:var(--text)">Major:</strong> Algorithm Design and Complexity<br /><br />
-          <strong style="color:var(--text)">Thesis:</strong> Strengths and Weaknesses of Classical Occlusion Culling Algorithms &#8212; empirical benchmark of 5 GPU rendering algorithms across 5,000 frames on modern hardware.
-        </div>
-        <span class="edu-gpa">GPA: 1.9 &#8212; Excellent</span>
-      </div>
-      <div class="edu-card">
-        <div class="edu-degree">B.Sc. Computer Science</div>
-        <div class="edu-school">Karachi Institute of Economics and Technology (KIET)</div>
-        <div class="edu-meta">Karachi, Pakistan &nbsp;&#183;&nbsp; Aug 2014 &#8211; Aug 2018</div>
-        <div class="edu-detail">
-          Four-year undergraduate degree in Computer Science &#8212; foundational knowledge in software engineering, data structures, algorithms, and systems design.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<!-- Contact -->
-<section id="contact">
-  <div class="container">
-    <div class="contact-card">
-      <h2>Let's talk</h2>
-      <p>Open to new opportunities in fullstack development.<br />Based in Paderborn &#8212; open to hybrid and remote roles across the EU.</p>
-      <div class="contact-links">
-        <a href="mailto:shariq.amajeed@gmail.com" class="btn btn-primary">&#9993; shariq.amajeed@gmail.com</a>
-        <a href="https://www.linkedin.com/in/shariqmajeed" target="_blank" class="btn btn-outline">LinkedIn &#8599;</a>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<footer>
-  <p>Shariq Majeed &nbsp;&#183;&nbsp; Paderborn, Germany &nbsp;&#183;&nbsp; Built with HTML &amp; CSS</p>
-</footer>
- 
-</body>
-</html>
